@@ -14,7 +14,7 @@ def get_random_quote():
 @app.route("/")
 def index():
     user = request.args.get("user") or None
-    time.sleep(1.5)  # Adding 1.5-second delay
+    time.sleep(3)  # Adding 1.5-second delay
     if user:
         quote = get_random_quote()
         template = """
